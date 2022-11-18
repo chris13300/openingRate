@@ -5,7 +5,7 @@ Prerequisites :<br>
 rename BUREAU.ini to YOUR-COMPUTER-NAME.ini<br>
 set moteurEPD to path_to_your_engine.exe<br>
 set livreBIN to path_to_your_polyglot_book.bin<br>
-copy [pg_key.exe](https://github.com/chris13300/openingRate/blob/main/openingRate/bin/Debug/pg_key.exe) in your openingRate folder<br>
+copy [pg_query.exe](https://github.com/chris13300/openingRate/blob/main/openingRate/bin/Debug/pg_query.exe) in your openingRate folder<br>
 copy [pgn-extract.exe](https://github.com/chris13300/openingRate/blob/main/openingRate/bin/Debug/pgn-extract.exe) in your openingRate folder<br>
 command : openingRate.exe path_to_your_opening_list.pgn<p>
 

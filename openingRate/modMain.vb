@@ -36,21 +36,9 @@ Module modMain
 
         Console.Title = My.Computer.Name
 
-        If My.Computer.FileSystem.GetFileInfo(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) & "Documents\Visual Studio 2013\Projects\openingRate\openingRate\bin\Debug\openingRate.exe").LastWriteTime > My.Computer.FileSystem.GetFileInfo(My.Application.Info.AssemblyName & ".exe").LastWriteTime Then
-            MsgBox("Il existe une version plus récente de ce programme !", MsgBoxStyle.Information)
-            End
-        End If
-
         fichierINI = My.Computer.Name & ".ini"
-        moteurEPD = "D:\JEUX\ARENA CHESS 3.5.1\Engines\BrainFish\20T BrainFish 110720 x64 BMI2.exe"
-        livreBIN = "D:\JEUX\ARENA CHESS 3.5.1\Scid vs PC\bin\books\Solista-010722.bin"
-        If My.Computer.Name = "PLEXI" Then
-            moteurEPD = "D:\JEUX\ARENA CHESS 3.5.1\Engines\BrainFish\20T BrainFish 110720 x64 PCNT.exe"
-            livreBIN = "D:\JEUX\ARENA CHESS 3.5.1\Scid vs PC\bin\books\Solista-010722.bin"
-        ElseIf My.Computer.Name = "BUREAU" Or My.Computer.Name = "WORKSTATION" Then
-            moteurEPD = "E:\JEUX\ARENA CHESS 3.5.1\Engines\BrainFish\20T BrainFish 110720 x64 BMI2.exe"
-            livreBIN = "E:\JEUX\ARENA CHESS 3.5.1\Scid vs PC\bin\books\Solista-010722.bin"
-        End If
+        moteurEPD = "BrainFish.exe"
+        livreBIN = "Book.bin"
 
         If My.Computer.FileSystem.FileExists(fichierINI) Then
             chaine = My.Computer.FileSystem.ReadAllText(fichierINI)

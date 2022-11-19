@@ -7,6 +7,7 @@ set moteurEPD to path_to_your_engine.exe<br>
 set livreBIN to path_to_your_polyglot_book.bin<br>
 copy [pg_query.exe](https://github.com/chris13300/openingRate/blob/main/openingRate/bin/Debug/pg_query.exe) in your openingRate folder<br>
 copy [pgn-extract.exe](https://github.com/chris13300/openingRate/blob/main/openingRate/bin/Debug/pgn-extract.exe) in your openingRate folder<br>
+some users may need to install [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)<br>
 command : openingRate.exe path_to_your_opening_list.pgn<p>
 
 There are 2 ways to use this tool :<br>
